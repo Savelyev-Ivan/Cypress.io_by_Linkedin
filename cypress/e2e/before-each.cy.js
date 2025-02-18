@@ -1,6 +1,6 @@
 describe('Text box with max chracters', () => {
     beforeEach(() => {
-        cy.visit('http://localhost:3000/example-3');
+        cy.visit('/example-3');
 
         cy.get('[data-cy="last-name-chars-left-count"]')
             .as('charsLeftSpan');
