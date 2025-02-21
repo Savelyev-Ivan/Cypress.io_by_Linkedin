@@ -21,7 +21,7 @@ describe('Basic page interactions', () => {
             .should('equal', '1');
     });
 
-    
+
     it('displays the name of the currently selected item', () => {
         cy.get('[data-cy=box-3-dropdown]')
             .select('Option Three');
@@ -41,4 +41,3 @@ describe('Basic page interactions', () => {
             .invoke('text')
             .should('equal', 'Option Two');
     });
-});
